@@ -1,0 +1,40 @@
+# Dragus Enterprises
+
+> Technology consulting firm specializing in Telecommunications, AI Development, and System Integration. Tagline: Technology for the Modern Age.
+
+Dragus Enterprises helps businesses of all sizes modernize their technology infrastructure. We provide expert consulting and implementation services across telecommunications, artificial intelligence, and systems integration — delivering solutions that run reliably, scale confidently, and integrate with existing operations.
+
+## Services
+
+- **Telecommunications Consulting**: Audit, design, procurement, and lifecycle management of voice, data, and unified communication networks. Specializing in carrier procurement, network modernization, and uptime-first architecture.
+- **AI Development**: Custom intelligent automation, predictive models, and AI-augmented workflows. We build AI systems that integrate into existing operations without disrupting them.
+- **System Integration**: Connecting legacy and modern platforms through secure, observable pipelines. We eliminate technology silos and unlock the full value of your existing tech stack.
+
+## Company
+
+- **Full name**: Dragus Enterprises
+- **Website**: https://www.dragusent.com
+- **Email**: admin@dragusent.com
+- **Phone**: +1 (658) 218-6658
+- **Address**: 2201 SW 59th Terrace, GCS-000398, West Park, FL 33023, USA
+- **Service area**: Available worldwide
+- **Industry**: Telecommunications Consulting, System Integration, Artificial Intelligence Development
+
+## Technology Partners
+
+- EmetroTel - Unified communications and migration
+- Yeastar - Cloud PBX and collaboration
+- Yealink - Endpoints and video conferencing
+- AWS - Cloud infrastructure
+
+## Key Facts
+
+- Delivered 150+ systems
+- Targets 99.99% uptime
+- Operates globally
+- Approach: Audit, Roadmap, Implementation
+
+## Legal
+
+- Privacy Policy: https://www.dragusent.com/privacy.html
+- Terms of Service: https://www.dragusent.com/terms.html

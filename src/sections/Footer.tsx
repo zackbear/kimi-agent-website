@@ -132,7 +132,7 @@ export default function Footer({ className = '' }: FooterProps) {
               Privacy
             </a>
             <a
-              href="#"
+              href="/terms.html"
               className="text-sm text-[#A7B1C8] hover:text-white transition-colors"
             >
               Terms
