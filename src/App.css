@@ -1,0 +1,102 @@
+/* App-specific styles */
+
+/* Ensure smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Pin spacer styling */
+.pin-spacer {
+  background: #070A12 !important;
+}
+
+/* Section transitions — only promote layers on sections that animate */
+.section-pinned {
+  will-change: transform, opacity;
+}
+
+/* Card hover effects */
+.glass-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 60px rgba(0,0,0,0.45);
+  border-color: rgba(45,107,255,0.3);
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-[#2D6BFF] text-white font-medium rounded-[14px] transition-all duration-300 cursor-pointer;
+}
+
+.btn-primary:hover {
+  @apply bg-[#1a5aee] shadow-lg;
+  box-shadow: 0 8px 30px rgba(45,107,255,0.35);
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-transparent text-[#A7B1C8] font-medium rounded-[14px] border border-[rgba(167,177,200,0.3)] transition-all duration-300 cursor-pointer;
+}
+
+.btn-secondary:hover {
+  @apply text-white border-[#2D6BFF];
+}
+
+/* Text link hover */
+.text-link {
+  @apply text-[#A7B1C8] transition-colors duration-300;
+}
+
+.text-link:hover {
+  @apply text-[#2D6BFF];
+}
+
+/* Form input styles */
+.form-input {
+  @apply w-full px-4 py-3 bg-[rgba(13,18,32,0.8)] border border-[rgba(167,177,200,0.18)] rounded-[12px] text-white placeholder:text-[#A7B1C8] transition-all duration-300;
+}
+
+.form-input:focus,
+.form-input:focus-visible {
+  outline: none;
+  @apply border-[#2D6BFF];
+  box-shadow: 0 0 0 3px rgba(45,107,255,0.25);
+}
+
+/* Animation utilities */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Stagger delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
