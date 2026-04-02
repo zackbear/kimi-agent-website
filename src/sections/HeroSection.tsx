@@ -196,7 +196,7 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
               className="text-base lg:text-xl text-[#A7B1C8] leading-relaxed max-w-[550px]"
               style={{ opacity: 0 }}
             >
-              Telecommunications, AI systems, and integration—built to run quietly,
+              Telecommunications, AI systems, and integration. Built to run quietly,
               scale confidently.
             </p>
 
@@ -252,7 +252,7 @@ export default function HeroSection({ className = '' }: HeroSectionProps) {
         {/* Bottom row - caption and link */}
         <div className="px-6 lg:px-[6vw] pb-6 lg:pb-[6vh] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#A7B1C8]">
-            Dragus Enterprises — Infrastructure Consulting
+            Dragus Enterprises | Infrastructure Consulting
           </p>
           <a
             href="#services"

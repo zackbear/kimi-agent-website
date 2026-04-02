@@ -126,7 +126,7 @@ export default function Footer({ className = '' }: FooterProps) {
           </p>
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/privacy.html"
               className="text-sm text-[#A7B1C8] hover:text-white transition-colors"
             >
               Privacy

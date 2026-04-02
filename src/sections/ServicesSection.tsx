@@ -14,7 +14,7 @@ const services = [
     icon: Phone,
     title: 'Telecommunications',
     description:
-      'We audit, design, and modernize communication networks — from unified comms to carrier procurement — so your infrastructure runs at full capacity.',
+      'We audit, design, and modernize communication networks, from unified comms to carrier procurement, so your infrastructure runs at full capacity.',
   },
   {
     icon: Brain,
@@ -26,7 +26,7 @@ const services = [
     icon: Network,
     title: 'System Integration',
     description:
-      'We connect legacy and modern platforms through secure, observable pipelines — eliminating silos and unlocking the full potential of your tech stack.',
+      'We connect legacy and modern platforms through secure, observable pipelines, eliminating silos and unlocking the full potential of your tech stack.',
   },
 ];
 

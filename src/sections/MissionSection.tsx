@@ -132,7 +132,7 @@ export default function MissionSection({ className = '' }: MissionSectionProps) 
             </h2>
 
             <p className="text-lg text-[#A7B1C8] leading-relaxed mb-8">
-              We believe infrastructure should be invisible—reliable, secure, and
+              We believe infrastructure should be invisible: reliable, secure, and
               fast. We help organizations modernize without drama, adopting AI and
               cloud systems that respect existing operations.
             </p>
