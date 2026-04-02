@@ -199,7 +199,7 @@ export default function ServicesSection({ className = '' }: ServicesSectionProps
         </div>
 
         {/* Cards grid - compact on mobile */}
-        <div className="flex-1 flex flex-col lg:flex-row gap-4 lg:gap-6 justify-center">
+        <div className="flex-1 flex flex-col lg:flex-row gap-4 lg:gap-6 justify-center lg:items-start">
           {services.map((service, index) => (
             <div
               key={service.title}

@@ -79,9 +79,9 @@ export default function Footer({ className = '' }: FooterProps) {
             aria-label="Dragus Enterprises — home"
           >
             <img
-              src="/images/dragus-logo.jpg"
+              src="/images/dragus-mark.png"
               alt="Dragus Enterprises"
-              className="h-16 w-auto"
+              className="h-10 w-auto"
             />
           </a>
 

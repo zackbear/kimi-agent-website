@@ -106,7 +106,7 @@ export default function ContactSection({ className = '' }: ContactSectionProps) 
     <section
       ref={sectionRef}
       id="contact"
-      className={`relative bg-[#0D1220] py-[10vh] min-h-screen ${className}`}
+      className={`relative bg-[#0D1220] py-[10vh] ${className}`}
     >
       {/* Background silhouette */}
       <div className="absolute inset-0 opacity-10">
