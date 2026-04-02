@@ -72,13 +72,17 @@ export default function Footer({ className = '' }: FooterProps) {
           {/* Logo */}
           <a
             href="#"
-            className="font-mono text-sm font-medium tracking-[0.18em] text-white hover:text-[#2D6BFF] transition-colors"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
             }}
+            aria-label="Dragus Enterprises — home"
           >
-            DRAGUS
+            <img
+              src="/images/dragus-logo.jpg"
+              alt="Dragus Enterprises"
+              className="h-16 w-auto"
+            />
           </a>
 
           {/* Nav */}
