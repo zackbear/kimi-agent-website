@@ -70,13 +70,27 @@ export default function ContactSection({ className = '' }: ContactSectionProps) 
     return () => ctx.revert();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const encode = (data: Record<string, string>) =>
+    Object.keys(data)
+      .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+      .join('&');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setShowSuccess(true);
-    setTimeout(() => {
-      setShowSuccess(false);
-      setFormData({ name: '', email: '', company: '', message: '' });
-    }, 3000);
+    try {
+      await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...formData }),
+      });
+      setShowSuccess(true);
+      setTimeout(() => {
+        setShowSuccess(false);
+        setFormData({ name: '', email: '', company: '', message: '' });
+      }, 3000);
+    } catch {
+      // Silently fail — form data not lost, user can retry
+    }
   };
 
   const handleChange = (
@@ -121,18 +135,18 @@ export default function ContactSection({ className = '' }: ContactSectionProps) 
             {/* Contact details */}
             <div className="space-y-4">
               <a
-                href="mailto:hello@dragusenterprises.com"
+                href="mailto:admin@dragusent.com"
                 className="flex items-center gap-3 text-[#A7B1C8] hover:text-[#2D6BFF] transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>hello@dragusenterprises.com</span>
+                <span>admin@dragusent.com</span>
               </a>
               <a
-                href="tel:+15550142200"
+                href="tel:+16582186658"
                 className="flex items-center gap-3 text-[#A7B1C8] hover:text-[#2D6BFF] transition-colors"
               >
                 <PhoneIcon className="w-5 h-5" />
-                <span>+1 (555) 014-2200</span>
+                <span>+1 (658) 218-6658</span>
               </a>
               <div className="flex items-center gap-3 text-[#A7B1C8]">
                 <Globe className="w-5 h-5" />
@@ -147,7 +161,16 @@ export default function ContactSection({ className = '' }: ContactSectionProps) 
             className="glass-card rounded-[22px] p-6 lg:p-8"
             style={{ opacity: 0 }}
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="bot-field" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label

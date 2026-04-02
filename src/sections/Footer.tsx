@@ -19,9 +19,9 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Github, href: '#', label: 'GitHub' },
+  { icon: Linkedin, href: '#', label: 'LinkedIn', external: false },
+  { icon: Twitter, href: '#', label: 'Twitter', external: false },
+  { icon: Github, href: 'https://github.com/zackbear/', label: 'GitHub', external: true },
 ];
 
 export default function Footer({ className = '' }: FooterProps) {
@@ -101,6 +101,7 @@ export default function Footer({ className = '' }: FooterProps) {
                 key={social.label}
                 href={social.href}
                 aria-label={social.label}
+                {...(social.external && { target: '_blank', rel: 'noopener noreferrer' })}
                 className="w-10 h-10 rounded-lg bg-[rgba(167,177,200,0.1)] flex items-center justify-center text-[#A7B1C8] hover:text-white hover:bg-[rgba(45,107,255,0.2)] transition-all"
               >
                 <social.icon className="w-5 h-5" />
