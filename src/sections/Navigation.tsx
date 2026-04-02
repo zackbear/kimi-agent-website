@@ -50,12 +50,14 @@ export default function Navigation() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
               aria-label="Dragus Enterprises — home"
+              className="flex items-center gap-3"
             >
               <img
                 src="/images/dragus-mark.png"
-                alt="Dragus Enterprises"
-                className="h-10 w-auto"
+                alt=""
+                className="h-14 w-auto"
               />
+              <span className="text-white font-semibold text-sm tracking-wide">Dragus Enterprises</span>
             </a>
 
             {/* Desktop Navigation */}

@@ -14,19 +14,19 @@ const services = [
     icon: Phone,
     title: 'Telecommunications',
     description:
-      'Design, procurement, and lifecycle management of voice, data, and unified comms.',
+      'We audit, design, and modernize communication networks — from unified comms to carrier procurement — so your infrastructure runs at full capacity.',
   },
   {
     icon: Brain,
     title: 'AI Development',
     description:
-      'Intelligent automation, predictive models, and AI-augmented workflows.',
+      'We build intelligent systems that automate repetitive work, surface insights from your data, and integrate smoothly into your existing operations.',
   },
   {
     icon: Network,
     title: 'System Integration',
     description:
-      'Connect legacy and modern platforms with secure, observable pipelines.',
+      'We connect legacy and modern platforms through secure, observable pipelines — eliminating silos and unlocking the full potential of your tech stack.',
   },
 ];
 
